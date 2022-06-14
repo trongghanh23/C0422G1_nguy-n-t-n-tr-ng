@@ -1,4 +1,4 @@
-package bai_tap_lam_them.quan_ly_truong_học.modle;
+package bai_tap_lam_them.modle;
 
 public class Teacher extends Person {
     private double salary;

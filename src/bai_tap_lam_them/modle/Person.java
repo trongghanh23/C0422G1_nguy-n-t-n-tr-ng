@@ -1,4 +1,4 @@
-package bai_tap_lam_them.quan_ly_truong_học.modle;
+package bai_tap_lam_them.modle;
 
 public abstract class Person {
     private int id;
@@ -10,9 +10,9 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(int id, String studentCode, String name, String birthday, String address) {
+    public Person(int id, String code, String name, String birthday, String address) {
         this.id = id;
-        this.code = studentCode;
+        this.code = code;
         this.name = name;
         this.birthday = birthday;
         this.address = address;
@@ -57,12 +57,18 @@ public abstract class Person {
     public void setAddress(String address) {
         this.address = address;
     }
+    public void animal(){
+        System.out.println("hello");
+    }
+    public void animal(int a){
+        System.out.println("hello");
+    }
 
     @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", studentCode='" + code + '\'' +
+                ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ", birthday='" + birthday + '\'' +
                 ", address='" + address + '\'' +

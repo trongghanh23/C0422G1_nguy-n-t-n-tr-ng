@@ -1,4 +1,4 @@
-package bai_tap_lam_them.quan_ly_truong_học.service;
+package bai_tap_lam_them.service;
 
 public interface IPerson {
     void display();
