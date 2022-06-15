@@ -10,4 +10,6 @@ public interface IPerson {
     void remove();
 
     void search();
+
+    void sort();
 }

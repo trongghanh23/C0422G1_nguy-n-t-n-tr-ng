@@ -6,7 +6,11 @@ import java.util.List;
 public class test {
     public static void main(String[] args) {
         Persons persons = new teacher();
+
+//        ((teacher)persons).getSalary();
+
         List<Persons> personsList = new ArrayList<>();
+
 
         personsList.add(new teacher());
         personsList.add(new student());
@@ -19,7 +23,7 @@ public class test {
 
         for (Persons e: personsList) {
             if (e instanceof teacher) {
-                ((teacher) e).hoc();
+                ((teacher)  e).work();
             }
             if (e instanceof student) {
                 ((student) e).study();

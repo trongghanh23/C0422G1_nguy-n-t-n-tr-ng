@@ -1,7 +1,8 @@
 package bai_tap_lam_them.service;
 
-public class TeacherIplm implements Teacher{
+import bai_tap_lam_them.modle.Person;
 
+public class TeacherIplm implements IPerson {
     @Override
     public void display() {
 
@@ -24,6 +25,11 @@ public class TeacherIplm implements Teacher{
 
     @Override
     public void search() {
+
+    }
+
+    @Override
+    public void sort() {
 
     }
 }
