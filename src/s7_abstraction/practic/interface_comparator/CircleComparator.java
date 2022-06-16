@@ -1,6 +1,7 @@
 package s7_abstraction.practic.interface_comparator;
 
-import _07_abstract_class_interface.thuc_hanh.iterface_comparable.Circle;
+
+import s5_access_modifier_static.excercise.access_modifier.Circle;
 
 import java.util.Comparator;
 

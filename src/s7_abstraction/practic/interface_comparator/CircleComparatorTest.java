@@ -1,6 +1,7 @@
 package s7_abstraction.practic.interface_comparator;
 
-import _07_abstract_class_interface.thuc_hanh.iterface_comparable.Circle;
+
+import s5_access_modifier_static.excercise.access_modifier.Circle;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -8,9 +9,9 @@ import java.util.Comparator;
 public class CircleComparatorTest {
     public static void main(String[] args) {
         Circle[] circles = new Circle[3];
-        circles[0] = new Circle(3.6);
+        circles[0] = new Circle();
         circles[1] = new Circle();
-        circles[2] = new Circle(3.5, "indigo", false);
+        circles[2] = new Circle();
 
         System.out.println("Pre-sorted:");
         for (Circle circle : circles) {

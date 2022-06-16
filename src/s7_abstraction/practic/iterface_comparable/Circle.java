@@ -1,6 +1,5 @@
 package s7_abstraction.practic.iterface_comparable;
 
-import _07_abstract_class_interface.thuc_hanh.iterface_comparable.Shape;
 
 public class Circle extends Shape {
     private double radius = 1.0;
