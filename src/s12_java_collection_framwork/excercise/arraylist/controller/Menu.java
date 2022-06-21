@@ -1,13 +1,13 @@
 package s12_java_collection_framwork.excercise.arraylist.controller;
 
-import s12_java_collection_framwork.excercise.arraylist.service.ISanPham;
-import s12_java_collection_framwork.excercise.arraylist.service.SanPhamIplm;
+import s12_java_collection_framwork.excercise.arraylist.service.IProduct;
+import s12_java_collection_framwork.excercise.arraylist.service.ProductImpl;
 
 import java.util.Scanner;
 
 public class Menu {
-    static Scanner scanner = new Scanner(System.in);
-    static ISanPham sanPham = new SanPhamIplm();
+   private static Scanner scanner = new Scanner(System.in);
+    private static IProduct iProduct = new ProductImpl();
 
     public static void displaySanPham() {
         do {
@@ -23,22 +23,22 @@ public class Menu {
             int input = Integer.parseInt(scanner.nextLine());
             switch (input) {
                 case 1:
-                    sanPham.add();
+                    iProduct.add();
                     break;
                 case 2:
-                    sanPham.edit();
+                    iProduct.edit();
                     break;
                 case 3:
-                    sanPham.remove();
+                    iProduct.remove();
                     break;
                 case 4:
-                    sanPham.display();
+                    iProduct.display();
                     break;
                 case 5:
-                    sanPham.search();
+                    iProduct.search();
                     break;
                 case 6:
-                    sanPham.sort();
+                    iProduct.sort();
                     break;
                 case 7:
                     System.exit(0);
