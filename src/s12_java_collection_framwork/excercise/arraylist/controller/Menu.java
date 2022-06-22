@@ -1,5 +1,6 @@
 package s12_java_collection_framwork.excercise.arraylist.controller;
 
+import s12_java_collection_framwork.excercise.arraylist.exception.CheckException;
 import s12_java_collection_framwork.excercise.arraylist.service.IProduct;
 import s12_java_collection_framwork.excercise.arraylist.service.ProductImpl;
 
@@ -20,7 +21,7 @@ public class Menu {
                     "6.sắp xêp\n" +
                     "7.exit");
             System.out.println("chon chức năng");
-            int input = Integer.parseInt(scanner.nextLine());
+            int input =CheckException.checkInt();
             switch (input) {
                 case 1:
                     iProduct.add();
