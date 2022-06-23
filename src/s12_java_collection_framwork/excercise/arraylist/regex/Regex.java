@@ -4,11 +4,11 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Regex {
-    public static boolean formatHovaTen(String str) {
-        final String VALID_NUMBER = "^(SP)[a-z][0-9]{10}$";
-        Pattern pattern = Pattern.compile(VALID_NUMBER);
-        return pattern.matcher(str).matches();
-    }
+//    public static boolean formatHovaTen(String str) {
+//        final String VALID_NUMBER = "^(SP)[a-z][0-9]{10}$";
+//        Pattern pattern = Pattern.compile(VALID_NUMBER);
+//        return pattern.matcher(str).matches();
+//    }
     public static void main(String[] args) {
         String regexCrawlNews = "^[A-Z][a-zA-z0-9]*[a-zA-z0-9]$";
         Scanner scanner = new Scanner(System.in);

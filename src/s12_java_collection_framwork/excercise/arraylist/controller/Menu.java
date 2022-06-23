@@ -9,8 +9,18 @@ import java.util.Scanner;
 public class Menu {
    private static Scanner scanner = new Scanner(System.in);
     private static IProduct iProduct = new ProductImpl();
+   static int inpur=Integer.parseInt(scanner.nextLine());
+    public static void sanpham(){
+        System.out.println("nhập số 1");
+        if (inpur==1){
+            displaySanPham();
+        }
+
+
+    }
 
     public static void displaySanPham() {
+
         do {
             System.out.println("*************menu product************\n" +
                     "1.Thêm sản phẩm\n" +

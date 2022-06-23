@@ -2,6 +2,7 @@ package s12_java_collection_framwork.excercise.arraylist.service;
 
 import s12_java_collection_framwork.excercise.arraylist.exception.CheckException;
 import s12_java_collection_framwork.excercise.arraylist.modle.Product;
+import s12_java_collection_framwork.excercise.arraylist.utils.DeMo;
 import s12_java_collection_framwork.excercise.arraylist.utils.SortDescendingPriceComparator;
 import s12_java_collection_framwork.excercise.arraylist.utils.SortAscendingPriceComparator;
 
@@ -99,6 +100,8 @@ public class ProductImpl implements IProduct {
         System.out.println("nhập mã sản phẩm cần xoá");
         String maSanPham = scanner.nextLine();
         boolean check = true;
+
+
         for (Product item : sanPhamList) {
             if (item.getProductCode().equals(maSanPham)) {
                 System.out.println("Ban có muốn xoá\n" +
@@ -109,12 +112,13 @@ public class ProductImpl implements IProduct {
                     check = false;
                     sanPhamList.remove(item);
                     break;
-                }else {
+                } else {
                     System.out.println("bạn không xoá");
                     break;
                 }
 
             }
+
             if (check) {
                 System.out.println("nhập mã xoá ko đúng nhập lại:");
                 remove();
