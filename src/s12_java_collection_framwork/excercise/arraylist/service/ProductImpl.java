@@ -1,6 +1,7 @@
 package s12_java_collection_framwork.excercise.arraylist.service;
 
 import s12_java_collection_framwork.excercise.arraylist.exception.CheckException;
+import s12_java_collection_framwork.excercise.arraylist.exception.NumberFormatException;
 import s12_java_collection_framwork.excercise.arraylist.modle.Product;
 import s12_java_collection_framwork.excercise.arraylist.utils.DeMo;
 import s12_java_collection_framwork.excercise.arraylist.utils.SortDescendingPriceComparator;
@@ -96,6 +97,7 @@ public class ProductImpl implements IProduct {
 
     @Override
     public void remove() {
+
         display();
         System.out.println("nhập mã sản phẩm cần xoá");
         String maSanPham = scanner.nextLine();
@@ -107,13 +109,21 @@ public class ProductImpl implements IProduct {
                 System.out.println("Ban có muốn xoá\n" +
                         "1.đồng ý\n" +
                         "2.không");
-                int input = Integer.parseInt(scanner.nextLine());
+                int input = CheckException.checkInt();
                 if (input == 1) {
                     check = false;
                     sanPhamList.remove(item);
                     break;
-                } else {
+                } else if (input==2) {
                     System.out.println("bạn không xoá");
+                    break;
+
+                } else {
+                    try {
+                        throw new NumberFormatException("Nhập k đúng định dạng");
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 }
 

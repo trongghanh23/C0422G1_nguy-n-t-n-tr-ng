@@ -1,6 +1,7 @@
 package s12_java_collection_framwork.excercise.arraylist.controller;
 
 import s12_java_collection_framwork.excercise.arraylist.exception.CheckException;
+import s12_java_collection_framwork.excercise.arraylist.exception.NumberFormatException;
 import s12_java_collection_framwork.excercise.arraylist.service.IProduct;
 import s12_java_collection_framwork.excercise.arraylist.service.ProductImpl;
 
@@ -40,7 +41,8 @@ public class Menu {
                     iProduct.edit();
                     break;
                 case 3:
-                    iProduct.remove();
+
+                        iProduct.remove();
                     break;
                 case 4:
                     iProduct.display();

@@ -11,7 +11,7 @@ public class CheckException {
               try {
                   value = Double.parseDouble(scanner.nextLine());
                   break;
-              } catch (NumberFormatException e) {
+              } catch (java.lang.NumberFormatException e) {
                   System.out.println(e.getMessage());
                   System.out.print("Không nhập kí tự vui lòng nhập số ");
               }
@@ -25,7 +25,7 @@ public class CheckException {
             try {
                 value = Integer.parseInt(scanner.nextLine());
 
-            } catch (NumberFormatException e) {
+            } catch (java.lang.NumberFormatException e) {
                 System.out.println(e.getMessage());
                 System.out.print("Không nhập kí tự vui lòng nhập số: ");
             }
