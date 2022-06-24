@@ -29,7 +29,6 @@ public class IllegalTriangle {
 
                 }
 
-
             } else if ((edge1 + edge2) < edge3 || (edge1 + edge3) < edge2 || (edge2 + edge3) < edge1) {
                 check = true;
                 try {
@@ -42,7 +41,7 @@ public class IllegalTriangle {
             } else {
                 check = false;
 
-                System.out.println("3 cạnh nhập vào là cạnh của tam giác:");
+                System.out.println("3 cạnh nhập vào là cạnh của tam giác ");
 
             }
 
