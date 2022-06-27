@@ -8,17 +8,8 @@ import s12_java_collection_framwork.excercise.arraylist.service.ProductImpl;
 import java.util.Scanner;
 
 public class Menu {
-   private static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
     private static IProduct iProduct = new ProductImpl();
-   static int inpur=Integer.parseInt(scanner.nextLine());
-    public static void sanpham(){
-        System.out.println("nhập số 1");
-        if (inpur==1){
-            displaySanPham();
-        }
-
-
-    }
 
     public static void displaySanPham() {
 
@@ -32,7 +23,7 @@ public class Menu {
                     "6.sắp xêp\n" +
                     "7.exit");
             System.out.println("chon chức năng");
-            int input =CheckException.checkInt();
+            int input = CheckException.checkInt();
             switch (input) {
                 case 1:
                     iProduct.add();
@@ -42,7 +33,7 @@ public class Menu {
                     break;
                 case 3:
 
-                        iProduct.remove();
+                    iProduct.remove();
                     break;
                 case 4:
                     iProduct.display();

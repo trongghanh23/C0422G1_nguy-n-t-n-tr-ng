@@ -1,6 +1,6 @@
 package s12_java_collection_framwork.excercise.arraylist.utils;
 
-import s12_java_collection_framwork.excercise.arraylist.modle.Product;
+import s12_java_collection_framwork.excercise.arraylist.models.Product;
 
 import java.util.Comparator;
 

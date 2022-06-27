@@ -1,4 +1,4 @@
-package s12_java_collection_framwork.excercise.arraylist.modle;
+package s12_java_collection_framwork.excercise.arraylist.models;
 
 public class Product {
     private String productCode;
