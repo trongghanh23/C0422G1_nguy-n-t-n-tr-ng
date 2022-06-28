@@ -44,6 +44,7 @@ public class Country {
                 "id=" + id +
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
-                '}';
+                '}'+"\n";
     }
 }
+

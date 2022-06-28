@@ -1,6 +1,6 @@
 package s12_java_collection_framwork.excercise.arraylist.models;
 
-public class Product {
+public  class Product {
     private String productCode;
     private String productName;
     private String manufacturingDay;
@@ -57,6 +57,7 @@ public class Product {
     public void setProductPrice(double productPrice) {
         this.productPrice = productPrice;
     }
+
 
     @Override
     public String toString() {
