@@ -18,6 +18,8 @@ public class CopyFile {
                 count += line.length();
 
             }
+            bufferedReader.close();
+            bufferedWriter.close();
 
             System.out.println("số kí tự trong chuỗi: " + count);
         } catch (IOException e) {
